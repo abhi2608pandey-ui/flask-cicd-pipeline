@@ -10,3 +10,5 @@ __pycache__/
 .idea/
 .vscode/
 .DS_Store
+github-actions-deploy
+github-actions-deploy.pub
