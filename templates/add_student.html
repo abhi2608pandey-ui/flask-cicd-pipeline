@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block title %}Add Student - Student Registration System{% endblock %}
+
+{% block content %}
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+
+        <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white">
+                <h4 class="mb-0">Add New Student</h4>
+            </div>
+
+            <div class="card-body">
+
+                <form method="POST">
+
+                    <div class="mb-3">
+                        <label for="name" class="form-label">
+                            Student Name
+                        </label>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="name"
+                            name="name"
+                            placeholder="Enter student name"
+                            required
+                        >
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            name="email"
+                            placeholder="Enter email address"
+                            required
+                        >
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="course" class="form-label">
+                            Course
+                        </label>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="course"
+                            name="course"
+                            placeholder="Enter course"
+                            required
+                        >
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+
+                        <a
+                            href="{{ url_for('index') }}"
+                            class="btn btn-secondary">
+                            Cancel
+                        </a>
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary">
+                            Add Student
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
